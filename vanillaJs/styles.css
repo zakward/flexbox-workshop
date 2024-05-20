@@ -1,51 +1,75 @@
 /* Global Styles (applied to all elements) */
 * {
-    margin: 0; /* Remove default margin from all elements */
-    box-sizing: border-box; /* Ensure padding and border don't affect element width/height */
-  }
-  
-  /* Styles for the App class */
-  .App {
-    display: flex; /* Activate flexbox layout for the container */
-    flex-direction: column; /* Arrange elements vertically within the container */
-    justify-content: space-around; /* Distribute elements with space around them in the main axis (column in this case) */
-    align-items: center; /* Align items horizontally within the container (centering them in this case) */
-    height: 100vh; /* Set container height to 100% viewport height */
-    width: 100vw; /* Set container width to 100% viewport width */
-    border: 5px solid red; /* Add a red border to the container for visualization */
-  }
-  
-  /* Styles for unordered list (ul) elements */
-  ul {
-    list-style: none; /* Remove default bullet points from list items */
-    padding: 0; /* Remove default padding from list items */
-    margin: 0; /* Remove default margin from list items */
-    border: 2px solid blue; /* Add a blue border to the list for visualization */
-    display: flex; /* Activate flexbox layout for the unordered list */
-    flex-direction: column; /* Arrange list items vertically within the list */
-    gap: 15px; /* Introduce a gap of 15px between list items for spacing */
-  }
-  
-  /* Styles for a class named flexbox-container (not used in the provided HTML) */
-  .flexbox-container {
-    border: 3px solid green; /* Add a green border for visualization */
-    height: 250px; /* Set height of the container to 250px */
-    width: 500px; /* Set width of the container to 500px */
-    padding: 10px; /* Add padding of 10px to the container */
-    display: flex; /* Activate flexbox layout for the container */
-    flex-direction: column; /* Arrange elements vertically within the container */
-    align-items: center; /* Horizontally center elements within the container */
-    justify-content: space-around; /* Distribute elements with space around them in the main axis (column in this case) */
-  }
-  
-  .flex-row {
-    height: 100px; /* Set height of the container to 100px */
-    width: 480px; /* Set width of the container to 480px */
-    border: 2px solid purple; /* Add a purple border for visualization */
-    display: flex; /* Activate flexbox layout for the container */
-    flex-direction: row; /* Arrange elements horizontally within the container */
-    align-items: center; /* Vertically center elements within the container */
-    justify-content: space-between; /* Distribute elements with space between them in the row */
-  }
-  
-  
+  margin: 0; /* Remove default margin from all elements */
+  box-sizing: border-box; /* Ensure padding and border don't affect element width/height */
+}
+
+/* Styles for the App class */
+.App {
+  display: flex; /* Activate flexbox layout for the container */
+  flex-direction: column; /* Arrange elements vertically within the container */
+  gap: 25px;/* Distribute elements with space around them in the main axis (column in this case) */
+  align-items: center; /* Align items horizontally within the container (centering them in this case) */
+  height: 100%;/* Set container height to 100% viewport height */
+  width: 100vw; /* Set container width to 100% viewport width */
+  border: 5px solid red; /* Add a red border to the container for visualization */
+  background-color: antiquewhite;
+}
+
+
+/* Styles for a class named flexbox-container (not used in the provided HTML) */
+.flexbox-container {
+  border: 3px solid black; /* Add a green border for visualization */
+  height: 250px; /* Set height of the container to 250px */
+  width: 500px; /* Set width of the container to 500px */
+  padding: 10px; /* Add padding of 10px to the container */
+  display: flex; /* Activate flexbox layout for the container */
+}
+
+p {
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.one {
+  background-color: blue;
+}
+.two {
+  background-color: red;
+}
+.three {
+  background-color: blueviolet;
+}
+.four {
+  background-color: green;
+}
+.five {
+  background-color: yellow;
+}
+
+.direction {
+flex-direction: row;
+}
+
+.wrap{
+  flex-wrap: nowrap;
+}
+
+.flow {
+flex-flow: column nowrap;
+}
+
+.justify {
+  justify-content: center;
+  align-items: center;
+}
+
+.gap {
+gap: 25px;
+}
+
+.align > .two {
+  align-self: flex-end;
+}
