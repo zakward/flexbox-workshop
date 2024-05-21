@@ -13,7 +13,7 @@
   height: 100%;/* Set container height to 100% viewport height */
   width: 100vw; /* Set container width to 100% viewport width */
   border: 5px solid red; /* Add a red border to the container for visualization */
-  background-color: antiquewhite;
+  background-color: rgb(251, 247, 243);
 }
 
 
@@ -50,12 +50,13 @@ p {
 }
 
 .direction {
-flex-direction: column-reverse;
+flex-direction: row-reverse;
 }
 
 .wrap{
-  flex-wrap:wrap-reverse;
-  width: 200px;
+  flex-wrap: wrap;
+  width: 30vw;
+  height: 100%;
 }
 
 .flow {
@@ -63,7 +64,7 @@ flex-flow: column nowrap;
 }
 
 .justify {
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
