@@ -56,6 +56,23 @@ function App() {
           <p className="four"> 4</p>
           <p className="five"> 5</p>
         </div>
+        <h2>flex within flex</h2>
+        <div className='flexbox-container flex-within'>
+          <div className="five inner-one"> 
+            <p>one</p>
+            <p>two</p>
+            <p>three</p>
+            <p>four</p>
+            <p>five</p>
+          </div>
+          <div className="five inner-two"> 
+            <p>one</p>
+            <p>two</p>
+            <p>three</p>
+            <p>four</p>
+            <p>five</p>
+          </div>
+        </div>
       </div>
     </>
   )
